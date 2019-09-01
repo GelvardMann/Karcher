@@ -1,0 +1,258 @@
+body {
+   outline: 2px solid blue;
+   margin: 0;
+   padding: 0;
+   font-family: 'Open Sans', sans-serif;
+   font-size: 100%;
+   box-sizing: border-box;
+}
+
+.wrapper {
+   box-sizing: border-box;
+   width: 100%;
+   padding: 0 6.328125%;
+}
+
+header {
+   height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+   margin: 0;
+   padding: 0;
+   font-family: 'Arvo', serif;
+}
+
+p {
+   font-weight: 400;
+   font-size: .9em;
+   color: rgb(158, 158, 158);
+   line-height: 1.571;
+}
+
+h2 {
+   font-size: 2.25em;
+   font-weight: 200;
+}
+
+a {
+   text-decoration: none;
+}
+
+ul, li {
+   margin: 0;
+   padding: 0;
+}
+
+li {
+   list-style: none;
+}
+
+nav {
+   display: flex;
+   justify-content: space-between;
+   box-sizing: border-box;
+   padding: 2em 0;
+   animation: navi 1000ms;
+}
+
+.logo {
+   width: 50%;
+}
+
+.nav_menu {
+   display: flex;
+   justify-content: space-between;
+   width: 50%;
+   text-transform: uppercase;
+}
+
+.slider_box {
+   position: relative;
+}
+
+.bookmarks {
+   position: absolute;
+   left: -4%;
+   top: 40%;
+}
+
+.bookmark {
+   display: block;
+   width: 10px;
+   height: 10px;
+   border-radius: 50%;
+   background-color: rgb(189, 189, 189);
+   cursor: pointer;
+   margin-bottom: 1em;
+}
+
+.bookmark:hover {
+   background-color: #ffc80a;
+   transition: 500ms;
+}
+
+.bookmark.active {
+   background-color: #ffc80a;
+}
+
+.slide {
+   box-sizing: border-box;
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+}
+
+.item {
+   box-sizing: border-box;
+   width: 50%;
+}
+
+.slide .item {
+   padding-top: 8em;
+   padding-bottom: 5em;
+}
+
+.slide_item h2 {
+   margin-bottom: 2em;
+}
+
+
+.animation_slider_item_left {
+   animation: gorizonral_from_left 1000ms;
+}
+
+.animation_slider_item_right {
+   animation: gorizonral_from_right 1000ms;
+}
+
+.slider_buttons {
+   margin: 0 auto;
+   text-align: center;
+   margin-top: 3em;
+}
+
+.button {
+   display: inline-block;
+   padding: .5em 3em;
+   border: 2px solid rgb(246, 246, 246);
+   border-radius: 95px 95px 95px 95px;
+   -moz-border-radius: 95px 95px 95px 95px;
+   -webkit-border-radius: 95px 95px 95px 95px;
+   color: #000;
+   text-transform: uppercase;
+   font-size: .9em;
+}
+
+.button:hover {
+   background-color: #ffc80a;
+}
+
+.mouse_down {
+   display: block;
+   width: 34px;
+   height: 72px;
+   background-image: url(../img/mouse.png);
+   position: absolute;
+   bottom: 72px;
+   left: 0;
+   right: 0;
+   margin: 0 auto;
+   z-index: 9999;
+   opacity: .8;
+   animation: vertical_animation 1000ms;
+}
+
+.mouse_down:hover {
+   opacity: 1;
+   transition: .5s;
+}
+
+.description {
+   display: flex;
+   justify-content: space-between;
+}
+
+.description .item {
+
+}
+
+
+@media screen and (max-width: 700px) {
+   .slide {
+      flex-direction: column;
+   }
+   .item {
+      width: 100%;
+   }
+   .slide .item {
+      padding-top: 3em;
+      padding-bottom: 3em;
+   }
+   .mouse_down {
+      bottom: 0;
+   }
+   .description {
+      flex-direction: column;
+   }
+}
+
+
+@keyframes navi {
+   from {
+      transform: translate(0, -70px);
+      opacity: 0;
+   }
+
+   to {
+      transform: translate(0, 0);
+      opacity: 1;
+   }
+}
+
+@keyframes gorizonral_from_left {
+   from {
+      transform: translate(-100%, 0);
+      opacity: 0;
+   }
+
+   to {
+      transform: translate(0, 0);
+      opacity: 1;
+   }
+}
+
+@keyframes gorizonral_from_right {
+   from {
+      transform: translate(200%, 0);
+      opacity: 0;
+   }
+
+   to {
+      transform: translate(0, 0);
+      opacity: 1;
+   }
+}
+
+@keyframes vertical_animation {
+   from {
+      transform: translate(0, 100px);
+      opacity: 0;
+   }
+   50% {
+      opacity: 0;
+   }
+   to {
+      transform: translate(0, 0);
+      opacity: .8;
+   }
+}
+
+
+
+@font-face {
+   font-family: 'arvo';
+   src: url('../fonts/arvo/arvo.woff2') format('woff2');
+   font-weight: normal;
+   font-style: normal;
+}
