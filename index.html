@@ -14,8 +14,8 @@
 </head>
 
 <body>
-   <header class="wrapper">
-      <nav id="move_nav">
+   <header>
+      <nav class="wrapper">
          <div class="logo">
             <img src="img/logo.png" alt="KARCHER">
          </div>
@@ -26,19 +26,19 @@
             <li><a href="">купить</a></li>
          </ul>
       </nav>
-      <div class="slider_box">
+      <div class="slider_box wrapper">
          <div class="bookmarks">
             <ul class="bookmark_box">
                <li class="bookmark active"></li>
                <li class="bookmark"></li>
                <li class="bookmark"></li>
-               <li class="bookmark active"></li>
+               <li class="bookmark"></li>
                <li class="bookmark"></li>
             </ul>
          </div>
-         <div class="owl-carousel slider">
+         <div class="slider owl-carousel">
             <div class="slide">
-               <div class="item  animation_slider_item_left">
+               <div class="column animation_slider_item_left">
                   <h2>Робот пылесос<br> Karcher RC 4000</h2>
                   <p>Karcher RC 4.000 справляется с уборкой в отсутствие хозяев благодаря тому, что операции чистки, сбора мусора и восстановления заряда аккумулятора в этом аппарате полностью автоматизированы.</p>
                   <div class="slider_buttons">
@@ -46,12 +46,25 @@
                      <a class="button" href="#">Описание</a>
                   </div>
                </div>
-               <div class="item animation_slider_item_right">
+               <div class="column animation_slider_item_right">
+                  <img class="cleaner1" src="img/slider_image.jpg" alt="">
+               </div>
+            </div>
+            <div class="slide">
+               <div class="column animation_slider_item_left">
+                  <h2>Робот пылесос<br> Karcher RC 4000</h2>
+                  <p>Karcher RC 4.000 справляется с уборкой в отсутствие хозяев благодаря тому, что операции чистки, сбора мусора и восстановления заряда аккумулятора в этом аппарате полностью автоматизированы.</p>
+                  <div class="slider_buttons">
+                     <a class="button" href="#">Купить</a>
+                     <a class="button" href="#">Описание</a>
+                  </div>
+               </div>
+               <div class="column animation_slider_item_right">
                   <img src="img/slider_image.jpg" alt="">
                </div>
             </div>
             <div class="slide">
-               <div class="item wrapper">
+               <div class="column animation_slider_item_left">
                   <h2>Робот пылесос<br> Karcher RC 4000</h2>
                   <p>Karcher RC 4.000 справляется с уборкой в отсутствие хозяев благодаря тому, что операции чистки, сбора мусора и восстановления заряда аккумулятора в этом аппарате полностью автоматизированы.</p>
                   <div class="slider_buttons">
@@ -59,12 +72,12 @@
                      <a class="button" href="#">Описание</a>
                   </div>
                </div>
-               <div class="item">
+               <div class="column animation_slider_item_right">
                   <img src="img/slider_image.jpg" alt="">
                </div>
             </div>
             <div class="slide">
-               <div class="item">
+               <div class="column animation_slider_item_left">
                   <h2>Робот пылесос<br> Karcher RC 4000</h2>
                   <p>Karcher RC 4.000 справляется с уборкой в отсутствие хозяев благодаря тому, что операции чистки, сбора мусора и восстановления заряда аккумулятора в этом аппарате полностью автоматизированы.</p>
                   <div class="slider_buttons">
@@ -72,12 +85,12 @@
                      <a class="button" href="#">Описание</a>
                   </div>
                </div>
-               <div class="item">
+               <div class="column animation_slider_item_right">
                   <img src="img/slider_image.jpg" alt="">
                </div>
             </div>
             <div class="slide">
-               <div class="item">
+               <div class="column animation_slider_item_left">
                   <h2>Робот пылесос<br> Karcher RC 4000</h2>
                   <p>Karcher RC 4.000 справляется с уборкой в отсутствие хозяев благодаря тому, что операции чистки, сбора мусора и восстановления заряда аккумулятора в этом аппарате полностью автоматизированы.</p>
                   <div class="slider_buttons">
@@ -85,72 +98,136 @@
                      <a class="button" href="#">Описание</a>
                   </div>
                </div>
-               <div class="item">
-                  <img src="img/slider_image.jpg" alt="">
-               </div>
-            </div>
-            <div class="slide">
-               <div class="item">
-                  <h2>Робот пылесос<br> Karcher RC 4000</h2>
-                  <p>Karcher RC 4.000 справляется с уборкой в отсутствие хозяев благодаря тому, что операции чистки, сбора мусора и восстановления заряда аккумулятора в этом аппарате полностью автоматизированы.</p>
-                  <div class="slider_buttons">
-                     <a class="button" href="#">Купить</a>
-                     <a class="button" href="#">Описание</a>
-                  </div>
-               </div>
-               <div class="item">
+               <div class="column animation_slider_item_right">
                   <img src="img/slider_image.jpg" alt="">
                </div>
             </div>
          </div>
-
       </div>
       <a class="mouse_down" href="#"></a>
    </header>
    <main>
-      <div class="description wrapper">
-         <div class="item wrapper">
+      <div class="content_box wrapper for_flex">
+         <div class="column padding_for_column">
             <h2>Автоматическая очистка и зарядка</h2>
-            <p>Karcher RC 4.000 занимается уборкой абсолютно самостоятельно. Специальные технологии позволяют ему автоматически выбирать необходимую интенсивность очистки, преодолевать препятствия и даже обходить лестницы. Он исключительно надежен и всегда сам возвращается к базовой станции для разгрузки собранного мусора и восстановления заряда аккумуляторов – разумеется, и эти операции полностью автоматизированы.</p>
+            <p>Karcher RC 4.000 занимается уборкой абсолютно самостоятельно. Специальные технологии позволяют ему автоматически выбирать необходимую интенсивность очистки, преодолевать препятствия и даже обходить лестницы. Он исключительно надежен и
+               всегда сам возвращается к базовой станции для разгрузки собранного мусора и восстановления заряда аккумуляторов – разумеется, и эти операции полностью автоматизированы.</p>
          </div>
-         <div class="item wrapper">
-            <ul>
-               <li>
+         <div class="column padding_for_column">
+            <ul class="wrapper">
+               <li class="description_list">
                   <h3>Производительность</h3>
                   <p>Робот-пылесос обеспечивает качественную сухую уборку в квартире со скоростью 15 квадратных метров в час</p>
                </li>
-               <li>
+               <li class="description_list">
                   <h3>Четыре режима работы</h3>
                   <p>Вы можете выбрать один из четырёх режимов: обычную уборку, быструю, хаотичную или ночную.</p>
                </li>
             </ul>
          </div>
       </div>
-      <div class="description wrapper">
-         <div class="item wrapper">
-            <h2>Автоматическая очистка и зарядка</h2>
-            <p>Karcher RC 4.000 занимается уборкой абсолютно самостоятельно. Специальные технологии позволяют ему автоматически выбирать необходимую интенсивность очистки, преодолевать препятствия и даже обходить лестницы. Он исключительно надежен и всегда сам возвращается к базовой станции для разгрузки собранного мусора и восстановления заряда аккумуляторов – разумеется, и эти операции полностью автоматизированы.</p>
+      <div class="content_box for_flex">
+         <div class="column padding_for_column">
+            <p>Производительность уборки - 15 кв.м. в час<br>Продолжительность уборки от одного заряда - 20 - 60 мин<br>Время заряда аккумулятора - от 10 до 20 мин<br>Вместимость пылесборника базовой станции - 2 л<br>Вместимость пылесборника аппарата
+               - 0,2 л<br>Максимальный уровень шума - 54 дБ<br>Максимальная потребляемая мощность - 600 Вт<br>Масса робота-пылесоса - 2 кг<br>Масса базовой станции - 5,8 кг<br>Размеры аппарата (диам. х В) - 285 x 105 мм<br>Размеры базовой станции (Д
+               х Ш х В) - 500 x 250 x 230 мм</p>
          </div>
-         <div class="item wrapper">
-            <ul>
-               <li>
-                  <h3>Производительность</h3>
-                  <p>Робот-пылесос обеспечивает качественную сухую уборку в квартире со скоростью 15 квадратных метров в час</p>
+         <div class="column">
+            <img class="cleaner2_settings" src="img/cleaner2.jpg" alt="">
+         </div>
+      </div>
+      <div class="slider_box_two wrapper">
+         <div class="slider_two owl-carousel">
+            <div class="slider_two_slide">
+               <h3>Очень хороший помощник в доме, убирает все начисто. Оставляю его на целый день, при этом заранее подготовив комнаты и ухожу. Возвращаясь домой - квартира вся чистая!</h3>
+            </div>
+            <div class="slider_two_slide">
+               <h3>Очень хороший помощник в доме, убирает все начисто. Оставляю его на целый день, при этом заранее подготовив комнаты и ухожу. Возвращаясь домой - квартира вся чистая!</h3>
+            </div>
+            <div class="slider_two_slide">
+               <h3>Очень хороший помощник в доме, убирает все начисто. Оставляю его на целый день, при этом заранее подготовив комнаты и ухожу. Возвращаясь домой - квартира вся чистая!</h3>
+            </div>
+            <div class="slider_two_slide">
+               <h3>Очень хороший помощник в доме, убирает все начисто. Оставляю его на целый день, при этом заранее подготовив комнаты и ухожу. Возвращаясь домой - квартира вся чистая!</h3>
+            </div>
+            <div class="slider_two_slide">
+               <h3>Очень хороший помощник в доме, убирает все начисто. Оставляю его на целый день, при этом заранее подготовив комнаты и ухожу. Возвращаясь домой - квартира вся чистая!</h3>
+            </div>
+         </div>
+         <div class="people_bookmarks_box">
+            <ul class="people_bookmarks">
+               <li class="people_bookmark">
+                  <div class="people_who_is">
+                     <h4>Олег Фролов</h4>
+                     <p>покупатель</p>
+                  </div>
                </li>
-               <li>
-                  <h3>Четыре режима работы</h3>
-                  <p>Вы можете выбрать один из четырёх режимов: обычную уборку, быструю, хаотичную или ночную.</p>
+               <li class="people_bookmark">
+                  <div class="people_who_is">
+                     <h4>Олег Фролов</h4>
+                     <p>покупатель</p>
+                  </div>
+               </li>
+               <li class="people_bookmark active">
+                  <div class="people_who_is">
+                     <h4>Олег Фролов</h4>
+                     <p>покупатель</p>
+                  </div>
+               </li>
+               <li class="people_bookmark">
+                  <div class="people_who_is">
+                     <h4>Олег Фролов</h4>
+                     <p>покупатель</p>
+                  </div>
+               </li>
+               <li class="people_bookmark">
+                  <div class="people_who_is">
+                     <h4>Олег Фролов</h4>
+                     <p>покупатель</p>
+                  </div>
                </li>
             </ul>
+         </div>
+      </div>
+      <div class="content_box wrapper for_flex">
+         <div class="column">
+            <h2>Робот пылесос Karcher RC 4000</h2>
+            <h2 class="price">39 199 ₽</h2>
+            <img class="cleaner3" src="img/slider_image.jpg" alt="">
+         </div>
+         <div class="column padding_for_column">
+            <form class="" action="#" method="post">
+               <input type="text" name="" value="" placeholder="имя и фамилия" required>
+               <input type="text" name="" value="" placeholder="электронная почта">
+               <input type="text" name="" value="" placeholder="телефон" required>
+               <input type="text" name="" value="" placeholder="адрес доставки">
+               <input type="text" name="" value="" placeholder="индекс">
+               <input class="button" type="submit" name="" value="отправить заказ">
+            </form>
          </div>
       </div>
    </main>
    <footer>
-
+      <nav class="wrapper">
+         <div class="logo">
+            <img src="img/logo.png" alt="KARCHER">
+         </div>
+         <ul class="nav_menu">
+            <li><a href="">описание</a></li>
+            <li><a href="">характеристики</a></li>
+            <li><a href="">отзывы</a></li>
+            <li><a href="">купить</a></li>
+         </ul>
+         <ul class="social">
+            <li class="vk"></li>
+            <li class="fb"></li>
+            <li class="insgrm"></li>
+         </ul>
+      </nav>
    </footer>
-
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
    <script src="js/script.js"></script>
+   <script src="js/slider_two.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
 </body>
 
