@@ -2,6 +2,7 @@ html {
    width: 100%;
    min-width: 320px;
    scroll-behavior: smooth;
+   overflow-x: hidden;
 }
 
 body {
@@ -46,8 +47,9 @@ p {
 h2 {
    font-size: 2.25em;
    font-weight: 200;
-}
 
+
+}
 h4 {
    font-size: 1.3em;
 }
@@ -85,11 +87,21 @@ nav {
    width: 50%;
    text-transform: uppercase;
 }
+.nav_menu li a {
+   color: #000;
+   opacity: .7;
+   transition: .7s;
+}
+
+.nav_menu li a:hover {
+   opacity: 1;
+   transition: .7s;
+}
 
 .slider_box, .content_box {
    box-sizing: border-box;
    width: 100%;
-   min-height: 720px;
+   min-height: 800px;
 }
 
 .slider_box {
@@ -104,6 +116,7 @@ nav {
    height: 100vh;
    padding-top: 5vh;
    padding-bottom: 5vh;
+   min-height: 800px;
 }
 
 .for_flex {
@@ -126,7 +139,6 @@ nav {
 .column {
    box-sizing: border-box;
    width: 50%;
-   overflow: hidden;
 }
 
 .column p {
@@ -194,7 +206,8 @@ nav {
 }
 
 .cleaner1 {
-   transform: scale(.9) translate(-10%, -10%);
+   max-width: 100%;
+   height: auto;
 }
 
 .mouse_down {
@@ -252,15 +265,14 @@ nav {
    left: -10%;
 }
 
-.cleaner2_settings {
-   position: absolute;
-}
+.cleaner2_settings {}
 
 .slider_box_two {
    box-sizing: border-box;
    height: 100vh;
    padding-top: 5vh;
    padding-bottom: 5vh;
+   min-height: 800px;
 }
 
 .slider_two_slide {
@@ -383,7 +395,6 @@ nav {
    bottom: -120px;
    width: 30%;
    text-align: center;
-   transform: translateX(-30%);
    visibility: hidden;
 }
 
@@ -392,14 +403,11 @@ nav {
 }
 
 .cleaner3 {
-   transform: scale(1.2) translate(20%, 5%);
-   z-index: -999;
-   position: absolute;
+   max-width: 100%;
 }
 
 .price {
    position: absolute;
-   transform: translate(8%, 30%);
    font-size: 3em;
    font-weight: 700;
    z-index: 6;
@@ -449,6 +457,41 @@ footer nav {
    animation: none;
 }
 
+footer nav .logo {
+   width: 15%;
+}
+
+footer nav .nav_menu {
+   width: 70%;
+   font-size: .8em;
+   justify-content: space-around;
+}
+
+.social {
+   width: 15%;
+   display: flex;
+   justify-content: space-between;
+}
+
+.social_icon {
+   width: 30px;
+   height: 30px;
+   background-image: url(../img/Sprite.png);
+   background-position: -241px -10px;
+   cursor: pointer;
+   opacity: .7;
+   transition: .5s;
+}
+
+.social_icon:hover {
+   opacity: 1;
+   transition: .5s;
+}
+
+.fb {background-position: -291px -10px;}
+
+.insgrm {background-position: -325px -12px;}
+
 @media screen and (min-width: 1300px) {
    .padding_for_column {
       padding: 15vh 5em;
@@ -463,57 +506,29 @@ footer nav {
       margin: 2em 0;
    }
 
-   .cleaner2_settings {
-      display: block;
-      transform: scale(1.2) translate(20%, 20%);
-   }
+   .cleaner2_settings {}
 
-   .people_who_is {
-      transform: translateX(-40%);
-   }
+   .people_who_is {}
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1000px) {
+   h2 {
+      font-size: 1.5em;
+   }
+   .logo {
+      width: 30%;
+   }
+   .nav_menu {
+      width: 70%;
+   }
+   .nav_menu li a {
+      font-size: .9em;
+      font-weight: bold;
+   }
    .content_box, .slide {
       transition: .5s;
       flex-direction: column;
       align-items: center;
-   }
-
-   .slider_box .column {
-      height: 33vh;
-   }
-
-   .column {
-      transition: 1s;
-      width: 85%;
-      height: 43vh;
-   }
-
-   .column:nth-child(1) {
-      transition: 1s;
-      margin-right: auto;
-   }
-
-   .column:nth-child(2) {
-      transition: 1s;
-      margin-left: auto;
-   }
-
-   .cleaner2_settings {
-      transform: scale(0.7) translate(0%, -30%);
-   }
-   .cleaner1 {
-      transform: scale(0.7) translate(0%, -22%);
-   }
-   .cleaner3 {
-      transform: scale(1) translate(40%, 10%);
-   }
-}
-
-@media screen and (max-width: 750px) {
-   h2 {
-      font-size: 1.5em;
    }
 
    .column {
@@ -531,27 +546,61 @@ footer nav {
       top: 0px;
    }
 
-   .cleaner2_settings {
-      transform: scale(.7) translate(-20%, -22%);
-   }
+   .cleaner2_settings {}
 
-   .slider_two_slide h3 {
-      font-size: 1.8em;
+   .slider_two_slide {
+      height: 60vh;
+      box-sizing: border-box;
+      padding: 10vh 5% 5vh 5%;
+      position: relative;
    }
 
    .people_who_is h4 {
       font-size: 1em;
    }
 
-   .cleaner3 {
-      transform: scale(1) translate(-15%, 10%);
+   .slider_two_slide h3 {
+      font-size: 1.3em;
+      font-family: 'Arvo', serif;
+      padding: 1em;
    }
+
+   .people_bookmark {
+      width: 30px;
+      height: 30px;
+   }
+
+   .cleaner3 {}
 
    input[type="text"] {
       text-transform: uppercase;
       box-sizing: border-box;
       padding: .5em .5em;
       border-bottom: 1px solid #d1d1d1;
+   }
+   footer nav {
+      justify-content: space-around;
+      height: auto;
+   }
+   footer nav .logo {
+      width: 30%;
+   }
+   footer nav .nav_menu{
+      flex-direction: column;
+      width: 30%;
+   }
+   .social {
+      width: 30%;
+   }
+}
+
+@media screen and (max-width: 600px) {
+   header nav {
+      flex-direction: column;
+      align-content: center;
+   }
+   .nav_menu {
+      width: 100%;
    }
 }
 
